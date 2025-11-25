@@ -121,7 +121,7 @@
 
 <script setup lang="ts">
 const stats = [
-  { label: 'Live websites', value: '05', detail: 'Fully deployed projects' },
+  { label: 'Live websites', value: '01', detail: 'Fully deployed projects' },
   { label: 'Tech stack', value: '04+', detail: 'Python · Vue · JS · CSS' },
   { label: 'Languages', value: '2', detail: 'Hindi + English' }
 ]
