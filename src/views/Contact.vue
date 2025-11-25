@@ -92,18 +92,20 @@ const handleSubmit = async () => {
     isSubmitting.value = true
     submitMessage.value = null
 
-    const response = await fetch('http://localhost:4000/api/contact', {
+    const response = await fetch('http://localhost:5000/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form.value)
     })
 
-    if (response.ok) {
+    const result = await response.json()
+
+    if (response.ok && result.success) {
       submitMessage.value = { text: 'Message sent successfully!', variant: 'success' }
       form.value = { name: '', email: '', message: '' }
     } else {
       submitMessage.value = {
-        text: 'Failed to send message. Please try again or email me directly.',
+        text: result?.error || 'Failed to send message. Please try again or email me directly.',
         variant: 'error'
       }
     }
