@@ -29,26 +29,26 @@
 <script setup lang="ts">
 const testimonials = [
   {
-    name: 'Neelam Verma',
+    name: 'nul',
     role: 'Clinic Director',
-    project: 'Healthcare website',
-    rating: 5,
-    quote: 'Amit handled our redesign end-to-end and made sure every update was clear. Our new booking flow feels delightful.'
+    project: 'nul',
+    rating: 0,
+    quote: 'No review yet'
   },
-  {
-    name: 'Raghav Gupta',
-    role: 'Startup Mentor',
-    project: 'Portfolio revamp',
-    rating: 5,
-    quote: 'He brings a product mindset to every screen. Communication was bilingual and crystal-clear every step of the way.'
-  },
-  {
-    name: 'Sonia Roy',
-    role: 'Entrepreneur',
-    project: 'Landing page',
-    rating: 4,
-    quote: 'Attention to detail is fantastic. The site loads fast on mobile and the content updates were handled without fuss.'
-  }
+  // {
+  //   name: 'Raghav Gupta',
+  //   role: 'Startup Mentor',
+  //   project: 'Portfolio revamp',
+  //   rating: 5,
+  //   quote: 'He brings a product mindset to every screen. Communication was bilingual and crystal-clear every step of the way.'
+  // },
+  // {
+  //   name: 'Sonia Roy',
+  //   role: 'Entrepreneur',
+  //   project: 'Landing page',
+  //   rating: 4,
+  //   quote: 'Attention to detail is fantastic. The site loads fast on mobile and the content updates were handled without fuss.'
+  // }
 ]
 </script>
 

@@ -48,14 +48,16 @@ const services = [
     description: 'Marketing sites, landing pages, and dashboards that feel polished on every device.',
     icon: '🌐',
     items: ['Component-driven UI', 'Animation & micro-interactions', 'SEO & analytics baked in'],
-    tags: ['Vue', 'GSAP', 'Responsive']
+    tags: ['Vue', 'Responsive']
+    // , 'GSAP'
   },
   {
     title: 'Design systems & handoff',
     description: 'Translate brand styles into reusable tokens, document components, and create Figma guidelines.',
     icon: '🎨',
     items: ['Token library', 'Accessible color palettes', 'Developer docs'],
-    tags: ['Figma', 'Design tokens']
+    tags: [ 'Design tokens']
+    // 'Figma',
   },
   {
     title: 'Backend pairing',

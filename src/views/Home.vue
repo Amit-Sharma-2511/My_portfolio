@@ -23,6 +23,13 @@
       </div>
 
       <div class="hero-media glass-card">
+        <div class="hero-photo">
+          <img :src="profilePhoto" alt="Amit Sharma portrait" loading="lazy" />
+          <div class="photo-badge">
+            <span class="badge-dot"></span>
+            Crafting web experiences daily
+          </div>
+        </div>
         <div class="hero-media-inner">
           <p class="eyebrow">Tech stack</p>
           <div class="skill-cloud">
@@ -120,9 +127,11 @@
 </template>
 
 <script setup lang="ts">
+const profilePhoto = new URL('../aseast/photo.jpg', import.meta.url).href
+
 const stats = [
   { label: 'Live websites', value: '01', detail: 'Fully deployed projects' },
-  { label: 'Tech stack', value: '04+', detail: 'Python · Vue · JS · CSS' },
+  { label: 'Tech stack', value: '04+', detail: 'HTML · Vue · JS · CSS' },
   { label: 'Languages', value: '2', detail: 'Hindi + English' }
 ]
 
@@ -164,15 +173,15 @@ const highlights = [
   },
   {
     icon: '🚀',
-    title: 'Fast & responsive',
-    description: 'Every page is optimized for performance, accessibility, and responsive breakpoints.',
-    points: ['Lighthouse-focused dev', 'Semantic HTML', 'Zero layout shifts']
+    title: 'Rocket-fast delivery',
+    description: 'Razor-sharp performance budgets plus DX tooling keep launches on schedule.',
+    points: ['Code-splitting + caching', 'Automated lighthouse gates', 'CI-driven releases']
   },
   {
     icon: '🤝',
-    title: 'Clear communication',
-    description: 'Bilingual collaboration (Hindi/English) ensures smoother client updates and demos.',
-    points: ['Weekly updates', 'Loom walkthroughs', 'Actionable next steps']
+    title: 'Handshake-level trust',
+    description: 'Transparent collaboration ensures every stakeholder stays aligned and confident.',
+    points: ['Weekly checkpoints', 'Recorded walkthroughs', 'Actionable next steps']
   }
 ]
 
@@ -186,7 +195,7 @@ const skillAreas = [
   },
   {
     title: 'Backend basics',
-    subtitle: 'Python & Express APIs',
+    subtitle: ' & Express APIs',
     icon: '🧱',
     confidence: 65,
     tags: ['REST', 'Express', 'Authentication', 'ORMs']
@@ -211,6 +220,9 @@ const skillAreas = [
 <style scoped>
 .hero {
   padding-top: 4rem;
+  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 45%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.4), transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
 }
 
 .hero-grid {
@@ -266,16 +278,72 @@ const skillAreas = [
 }
 
 .hero-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--bg-secondary) 85%, transparent),
+    color-mix(in srgb, var(--bg-primary) 92%, rgba(15, 23, 42, 0.75))
+  );
+  border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
+  box-shadow: 0 25px 60px color-mix(in srgb, rgba(15, 23, 42, 0.18), transparent);
 }
 
-.hero-media::after {
+.hero-photo {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--border) 45%, transparent);
+  background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--accent-soft) 40%, transparent), transparent 70%);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.025);
+  filter: saturate(0.92) contrast(1.05) brightness(1.02);
+}
+
+.hero-photo::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.25), transparent 55%);
+  background: linear-gradient(
+    185deg,
+    color-mix(in srgb, var(--bg-primary) 40%, transparent) 0%,
+    transparent 45%,
+    color-mix(in srgb, rgba(15, 23, 42, 0.7), transparent) 100%
+  );
+  mix-blend-mode: soft-light;
   pointer-events: none;
+}
+
+.photo-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg-primary) 35%, rgba(15, 23, 42, 0.75));
+  color: var(--text-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  backdrop-filter: blur(8px);
+}
+
+.badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.8);
 }
 
 .hero-media-inner {
@@ -284,6 +352,7 @@ const skillAreas = [
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .eyebrow {
@@ -473,3 +542,4 @@ const skillAreas = [
   }
 }
 </style>
+

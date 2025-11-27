@@ -22,7 +22,8 @@
           <div class="socials">
             <p class="detail-title">Elsewhere</p>
             <div class="social-chips">
-              <a v-for="social in socials" :key="social.label" :href="social.url" class="tag" target="_blank" rel="noreferrer">
+              <a v-for="social in socials" :key="social.label" :href="social.url" class="tag" target="_blank"
+                rel="noreferrer">
                 {{ social.label }}
               </a>
             </div>
@@ -43,18 +44,16 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" v-model="form.message" rows="5" required placeholder="Tell me about the project"></textarea>
+            <textarea id="message" v-model="form.message" rows="5" required
+              placeholder="Tell me about the project"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
             {{ isSubmitting ? 'Sending...' : 'Send message' }}
           </button>
-          <p
-            v-if="submitMessage"
-            class="submit-message"
-            :class="submitMessage.variant"
-            role="status"
-            aria-live="polite"
-          >
+          <p>Email does not work yet because I does not have a Domain so if you need me just send me a mail. You can
+            also call me if you need.</p>
+          <p v-if="submitMessage" class="submit-message" :class="submitMessage.variant" role="status"
+            aria-live="polite">
             {{ submitMessage.text }}
           </p>
         </form>

@@ -70,4 +70,4 @@ npm run preview
 
 - **Name**: Amit Sharma
 - **Languages**: Hindi, English
-- **Skills**: Python, Vue.js, JavaScript, HTML, CSS
+- **Skills**: Vue.js, JavaScript, HTML, CSS
