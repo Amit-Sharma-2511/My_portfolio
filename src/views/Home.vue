@@ -3,7 +3,7 @@
     <div class="container hero-grid">
       <div class="hero-content glass-card">
         <p class="chip">Based in India · Available for freelance</p>
-        <h1>Creating thoughtful websites with clean code and empathy.</h1>
+        <h1>Creating thoughtful websites with clean code.</h1>
         <p class="hero-description">
           I recently graduated with a BE/BTech degree and already shipped live projects.
           I combine Vue.js, JS and HTML. I have strong communication skills in (Hindi & English) and build experiences
@@ -53,10 +53,10 @@
     <div class="container">
       <div class="section-heading">
         <p class="section-eyebrow">Process</p>
-        <h2>My approach to designing websites</h2>
+        <h2>My design process</h2>
         <p class="section-subtitle">
           Every build goes through a tight loop of discovery, design, development, and launch support so the final
-          product reflects real business needs.
+          product reflects your business needs.
         </p>
       </div>
       <div class="approach-grid">
@@ -76,7 +76,7 @@
     <div class="container">
       <div class="section-heading">
         <p class="section-eyebrow">What I bring</p>
-        <h2>Blend of design sense and engineering discipline</h2>
+        <h2>Blend of visual sense and engineering discipline</h2>
         <p class="section-subtitle">
           I focus on performance, accessibility, and user empathy so that every interaction feels polished.
         </p>
@@ -152,7 +152,7 @@ const approachSteps = [
   },
   {
     step: '03 · Build',
-    title: 'Development sprints',
+    title: 'Coding sprints',
     description: 'Vue components, utility-first CSS, and performance budgets keep the build clean and maintainable.',
     points: ['Composable Vue setup', 'Accessible interactions', 'Performance + QA checkpoints']
   },
@@ -167,7 +167,7 @@ const approachSteps = [
 const highlights = [
   {
     icon: '🎯',
-    title: 'Goal-driven builds',
+    title: 'Goal-driven solutions',
     description: 'I dissect requirements, document scope, and prototype flows that support business goals.',
     points: ['User journey mapping', 'Wireframes & prototypes', 'KPIs baked into dev']
   },

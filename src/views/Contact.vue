@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-heading">
         <p class="section-eyebrow">Contact</p>
-        <h2>Let’s collaborate on your next project</h2>
+        <h2>Let’s build something great together</h2>
         <p class="section-subtitle">
           Prefer email over meetings? Same here. Send a quick note and I'll respond within 24 hours.
         </p>
@@ -31,7 +31,7 @@
         </div>
 
         <form @submit.prevent="handleSubmit" class="contact-form glass-card" novalidate>
-          <h3>Send a message</h3>
+          <h3>Get in touch</h3>
           <div class="form-grid">
             <div class="form-group">
               <label for="name">Name</label>
@@ -45,13 +45,12 @@
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" v-model="form.message" rows="5" required
-              placeholder="Tell me about the project"></textarea>
+              placeholder="What’s on your mind?"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
             {{ isSubmitting ? 'Sending...' : 'Send message' }}
           </button>
-          <p>Email does not work yet because I does not have a Domain so if you need me just send me a mail. You can
-            also call me if you need.</p>
+          <p>The form is currently under development. Please email me directly for any inquiries.</p>
           <p v-if="submitMessage" class="submit-message" :class="submitMessage.variant" role="status"
             aria-live="polite">
             {{ submitMessage.text }}
@@ -110,7 +109,7 @@ const handleSubmit = async () => {
     }
   } catch (error) {
     submitMessage.value = {
-      text: 'Network error. Email me at sharmaamit99526@gmail.com while I fix this.',
+      text: 'Network error. Please contact me directly at sharmaamit99526@gmail.com while I resolve this issue.',
       variant: 'error'
     }
   } finally {
