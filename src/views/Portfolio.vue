@@ -73,26 +73,26 @@ const projects = [
     demoUrl: 'https://fortisphysiotherapy.com/',
     caseStudyPath: '/case-studies/fortis-physiotherapy'
   },
-  {
-    title: 'Personal Portfolio v2',
-    description: 'This site — designed with soft gradients, accessible colors, and motion principles.',
-    highlights: ['Theme toggle with persistence', 'Component library driven layout', 'Responsive nav system'],
-    stack: ['Vue', 'Vite', 'CSS Modules'],
-    category: 'Personal',
-    year: '2024',
-    demoUrl: '#',
-    repoUrl: '#'
-  },
-  {
-    title: 'Python Analytics Dashboard',
-    description: 'Simple analytics dashboard for tracking engagement metrics with downloadable reports.',
-    highlights: ['Flask API endpoints', 'JWT auth for admin view', 'CSV export for weekly reports'],
-    stack: ['Python', 'Flask', 'Chart.js', 'SQLite'],
-    category: 'Study',
-    year: '2023',
-    demoUrl: '#',
-    repoUrl: '#'
-  }
+  // {
+  //   title: 'Personal Portfolio v2',
+  //   description: 'This site — designed with soft gradients, accessible colors, and motion principles.',
+  //   highlights: ['Theme toggle with persistence', 'Component library driven layout', 'Responsive nav system'],
+  //   stack: ['Vue', 'Vite', 'CSS Modules'],
+  //   category: 'Personal',
+  //   year: '2024',
+  //   demoUrl: '#',
+  //   repoUrl: '#'
+  // },
+  // {
+  //   title: 'Python Analytics Dashboard',
+  //   description: 'Simple analytics dashboard for tracking engagement metrics with downloadable reports.',
+  //   highlights: ['Flask API endpoints', 'JWT auth for admin view', 'CSV export for weekly reports'],
+  //   stack: ['Python', 'Flask', 'Chart.js', 'SQLite'],
+  //   category: 'Study',
+  //   year: '2023',
+  //   demoUrl: '#',
+  //   repoUrl: '#'
+  // }
 ]
 </script>
 
